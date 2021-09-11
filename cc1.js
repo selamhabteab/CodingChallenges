@@ -1,6 +1,6 @@
-// Day 1: 9/10
+// Week 1
 
-//Reverse a string:
+// Day 1 - 9/10 - Reverse a string
 //My logic: 1)split string into an array 2)reverse order of array 3)return array into a string with .join("")
 function reverseString (string) {
     let tempArr = string.split('').reverse()
@@ -21,3 +21,5 @@ function reverseForLoop (string) {
     return tempStr
 }
 console.log(reverseForLoop('hello'));
+//------------------------------------
+// Day 2 - 9/11 - Factorialize
