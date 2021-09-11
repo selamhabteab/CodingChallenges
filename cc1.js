@@ -6,11 +6,13 @@ function reverseString (string) {
     let tempArr = string.split('').reverse()
     return tempArr.join('')
 }
-
-const reverseStr = (string) => tempArr = string.split('').reverse().join('')
-
 console.log(reverseString('hello'));
 
+//short version:
+const reverseStr = (string) => tempArr = string.split('').reverse().join('')
+console.log(reverseStr('hello'));
+
+//using a for loop 
 function reverseForLoop (string) {
     let tempStr = '';
     for (let i=string.length-1; i>=0; i--){
