@@ -103,3 +103,4 @@ var fruits = ["apple", "mango", "strawberries", "lemon"]
 for (let fruit of fruits){
     console.log(fruit);
 }
+//another technique was to use a sort method on the string.split array and have the longest word at the beginning of array.
