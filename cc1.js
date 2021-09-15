@@ -104,3 +104,13 @@ for (let fruit of fruits){
     console.log(fruit);
 }
 //another technique was to use a sort method on the string.split array and have the longest word at the beginning of array.
+//------------------------------------
+
+// DAY 5 - 9/14 - Title Case a Sentence
+
+// Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lowercase. 
+//My logic (pseudocode): 
+//Create a function that takes in a string "this is a string"
+//Assign a variable to hold: split string into an array 
+    //["this", "is", "a", "string"]. --> ["t", "h", "i"...]
+//nested for loop to extract first letter of each value and uppercase then join to return to string then join again to return to sentence 
