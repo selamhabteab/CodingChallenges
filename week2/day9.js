@@ -1,13 +1,24 @@
 //WEEK 2
 
-// DAY 9 - Sa, 9/18 - ...
+// DAY 9 - Sa, 9/18 - Truncate a string
 
-// Challenge: Return an array consisting of the largest number from each provided sub-array. 
+// Challenge: Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a '...' ending.
 
 //My logic (pseudocode): 
-//Create a function that takes in an array 
-    //[[4,5,1], [13,2,7], [9,10,1], [500,5,33]]
-//Assign a variable to an empty array that will hold the largest numbers
-//Apply a for loop to iterate through the array 
-//add a conditional to extract the largest number in each array[i]
-//push the longest numbers into the empty array
+//Create a function that takes in a string and number 
+//Create a conditional that checks if the string.length is greater than the second argument, num
+//if string.length is larger than number,then slice string 
+//and concatenate "..."
+//elseif string.length is equal or less than the number, then return string as is
+
+function truncateStr(str, num){
+    if (str.length > num) {
+        let difference = str.length - num
+        let newStr = str.slice(0,-difference) + "..."
+        return newStr
+    } 
+    return str
+}
+console.log(truncateStr("selamay", 5)); //--> "selam..."
+console.log(truncateStr("Walhanti", 9)); //--> "Walhanti"
+
